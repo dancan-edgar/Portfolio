@@ -1,0 +1,95 @@
+body {
+    font-family: Montserrat,sans-serif;
+}
+.top {
+    position: relative;
+    height: 400px;
+}
+
+header {
+    position: fixed;
+}
+
+header .social-icons {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    ul {
+        li {
+            transition: background-color 1s,color 1s;
+        }
+    }
+}
+
+.get-in-touch {
+    ::placeholder {
+        color: rgba(64, 94, 52, 0.5);
+    }
+}
+
+.arrow {
+    padding: 3px;
+    transition: color 1s,transform 1s;
+}
+
+.arrow:hover {
+    color: darkcyan;
+    transform: translateX(7px);
+}
+
+.arrow:hover::before {
+    color: darkcyan;
+}
+
+.arrow::before {
+    content: "\f061";
+    color: lightskyblue;
+    font-family: "Font Awesome 5 Free",sans-serif;
+    font-weight: 900;
+    padding: 0 2px;
+}
+
+footer .social-icons {
+    li {
+        background-color: darkcyan;
+        transition: background-color 1s,color 1s;
+    }
+
+    .copyright {
+        flex: 1 1 100%;
+    }
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(190% + 1.3px);
+    height: 285px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
+
+.platforms {
+    img {
+        transition: transform 1s;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+
